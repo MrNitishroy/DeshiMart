@@ -1,3 +1,4 @@
+import 'package:deshimart_app/config/page_routes.dart';
 import 'package:deshimart_app/config/themes.dart';
 import 'package:deshimart_app/pages/home_page/home_page.dart';
 import 'package:deshimart_app/pages/splace_page/splace_page.dart';
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Deshi Mart',
       theme: lightTheme,
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: false,
-      home: SplacePage(),
+      routerConfig: router,
     );
   }
 }
